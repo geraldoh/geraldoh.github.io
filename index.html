@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!--<link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme4.css">-->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!-- use this style for testing and development purposes -->
+    <style type="text/css">
+        .footer-icons {
+            margin-top: 50px
+        }
+        
+        .container {
+            border: 2px dotted green;
+        }
+        
+        .row {
+            border: 1px dotted red;
+        }
+        
+        .row [class*=' col-'] {
+            border: 2px dotted purple;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- hamburger button. do not touch! -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+                <a class="navbar-brand" href="#">
+                    <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+                    <i class="fa fa-home"></i>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- THIS UL HANDLES OUR LINKS -->
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="http://facebook.com">About Us</a></li>
+                    <li><a href="http://facebook.com">History</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://facebook.com">Signup</a></li>
+                    <li><a href="http://facebook.com">Login</a></li>
+
+                    <!-- to make more links, make some <li> in here -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--this container is to hold EVERYTHING-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <div class="jumbotron">
+                    <h1>iDog Tunes!</h1>
+                    <p>Get your personalised dog tunes online</p>
+                    <a href="http://stackup.sg/" class="btn btn-primary btn-lg">Click me</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <!--end of first row-->
+    <!--row2: thumbnails-->
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h3>Bark Tunes Categories </h3>
+            <div class="thumbnail">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW0yum39e95asY9Mn0-3iLh92u6sgiEzds6m1SmgYnf5dAXyWTwg">
+                <div class="caption">
+                    <h3>Big Dogs</h3>
+                    <p>
+                        Great Danes<br> 
+                        Mastiffs<br> 
+                        Great Pyrenees
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="thumbnail">
+                <img src="http://cdn.akc.org/Marketplace/Breeds/Labrador_Retriever_SERP.jpg" class="img-circle">
+                <div class="caption">
+                    <h3>Medium Dogs</h3>
+                    <p>
+                        Labrador Retriever<br> Poodle
+                        <br> Siberian Husky
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="thumbnail">
+                <img src="https://s-media-cache-ak0.pinimg.com/736x/02/d7/01/02d701b77a984a1b6cf970e6eb0468e1.jpg" class="img-circle">
+                <div class="caption">
+                    <h3>Puppies</h3>
+                    <p>
+                        Chihuahua<br> Boston Terrier<br> Bolognese
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <hr>
+    <!--end of thumbnails-->
+    <!--row 3: embeded video-->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EEm3LT1vZiQ"></iframe>
+            </div>
+
+
+        </div>
+    </div>
+    <hr>
+    <!--end of video-->
+    <!--row 4: form-->
+
+    <div class="row">
+        <!--col1: form-->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="panel panel-defaul">
+                <div class="panel-body">
+                    <form action="https://coderinyou-1332.appspot.com/submit" mehtod="post">
+
+                        <legend>Signup</legend>
+
+                        <div class="form-group">
+                            <label for="name-id">Name</label>
+                            <input id="name-id" class="form-control" type="text" name="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email-id">Email</label>
+                            <input id="email-id" class="form-control" type="email" name="Email">
+                        </div>
+
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="gender" value="male"> Male 
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="gender" value="female"> Female
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="gender" value="Other"> Other
+                            </label>
+                        </div>
+
+                        <input type="submit" class="btn btn-primary">
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!--col2: form-->
+        <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+            <h1 class="text-primary">Signup to get the latest iDog Tunes</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, exercitationem. Aliquid ab maxime assumenda
+                molestias dolorem officiis quidem, esse nobis sit provident voluptas amet vero, unde ut, natus, delectus
+                tempore!
+
+            </p>
+
+        </div>
+
+    </div>
+    <!--row5: contact details-->
+    <div class="row">
+
+        <!--table-->
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h3 class="text-center">
+                <font color="blue">Visit our shop to hear more
+                </font>
+            </h3>
+            <h4 class="text-center">Opening Hours</h4>
+            <table class="table table-striped">
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday to Saturday</td>
+                    <td>11am - 3am</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <!--table end-->
+
+        <!--Google Map-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://goo.gl/sJwye9"></iframe>
+                </div>
+            </div>
+            <!--Google Map End-->
+            <!--List menu-->
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="list-group">
+                        <a class="list-group-item" href="https://www.google.com.sg/"><i class="fa fa-home fa-fw"></i>&nbsp; Google</a>
+                        <a class="list-group-item" href="https://www.nlb.gov.sg/"><i class="fa fa-book fa-fw"></i>&nbsp; Library</a>
+                        <a class="list-group-item" href="http://stories.barkpost.com/15-dog-lover-apps/"><i class="fa fa-pencil fa-fw"></i>&nbsp; Dog Stories</a>
+
+                    </div>
+                </div>
+            </div>
+            <!--List menu end-->
+
+            <!--row 6: social media-->
+            <div class="row footer-icons">
+                <div class="col-xs-12">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="http://facebook.com">
+                                <i class="fa fa-handshake-o fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com">
+                                <i class="fa fa-twitter fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com">
+                                <i class="fa fa-envelope fa-2x"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <!-- jquery -->
+        <script type="text/javascript " src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js "></script>
+        <!-- bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa "
+            crossorigin="anonymous "></script>
+
+        <script type="text/javascript " src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js "></script>
+        <script>
+            new WOW().init();
+        </script>
+</body>
+
+</html>
